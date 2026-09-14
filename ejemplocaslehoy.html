@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Ejemplo práctico de CSS del capítulo 3">
+	<title>Ejemplo práctico de CSS</title>
+	<link rel="stylesheet" href="ejemplocaslehoy.css">
+</head>
+<body>
+	<header class="encabezado">
+		<h1 id="titulo-principal">Bienvenidos al curso de desarrollo web</h1>
+		<p>Aprendiendo HTML desde cero</p>
+	</header>
+
+	<nav aria-label="Navegación principal">
+		<ul class="menu">
+			<li><a href="#inicio">Inicio</a></li>
+			<li><a href="#multimedia">Multimedia</a></li>
+			<li><a href="#formulario">Contacto</a></li>
+		</ul>
+	</nav>
+
+	<main id="inicio">
+		<section class="tarjeta">
+			<h2>Introducción</h2>
+			<p>Este documento demuestra el uso de etiquetas comunes en HTML y reglas CSS para organizar, presentar y adaptar una página web.</p>
+			<p class="destacado">La separación entre HTML y CSS facilita la reutilización y el mantenimiento del código.</p>
+		</section>
+
+		<section class="tarjeta" id="multimedia">
+			<h2>Contenido multimedia</h2>
+			<p>HTML permite integrar imágenes, audio y video dentro de una página web.</p>
+			<figure>
+				<div class="imagen-ejemplo" role="img" aria-label="Ilustración decorativa de HTML">&lt;HTML&gt;</div>
+				<figcaption>Ejemplo de contenido visual integrado con HTML.</figcaption>
+			</figure>
+			<audio controls aria-label="Audio de ejemplo">
+				Tu navegador no soporta audio HTML5.
+			</audio>
+			<video controls aria-label="Video de ejemplo">
+				Tu navegador no soporta video HTML5.
+			</video>
+		</section>
+
+		<section class="tarjeta" id="formulario">
+			<h2>Formulario de contacto</h2>
+			<p>Utiliza el siguiente formulario para enviar un mensaje:</p>
+			<form action="#" method="post">
+				<label for="nombre">Nombre:</label>
+				<input id="nombre" name="nombre" type="text" placeholder="Escribe tu nombre" required>
+
+				<label for="correo">Correo electrónico:</label>
+				<input id="correo" name="correo" type="email" placeholder="nombre@ejemplo.com" required>
+
+				<label for="mensaje">Mensaje:</label>
+				<textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..."></textarea>
+
+				<button type="submit">Enviar</button>
+			</form>
+		</section>
+	</main>
+
+	<footer>
+		<p>&copy; 2026 Curso de Programación con Tecnologías Web.</p>
+		<p>Demostración con fines académicos.</p>
+	</footer>
+</body>
+</html>
+    
